@@ -116,3 +116,15 @@ body {
 .ticket-button:hover {
   background-color: #0056b3;
 }
+
+.city-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.city-info-container .dCard {
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Adjust max-width as needed */
+}

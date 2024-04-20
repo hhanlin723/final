@@ -9,11 +9,10 @@ import UserPortal from './pages/UserPortal.js';
 function MyRouter() {
   return (
     <Switch>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/cityinfo' element={<CityInfoPage />} />
-        <Route path='/city/:id' element={<CityInfoPage />} /> {/* Route with city ID parameter */}
-        <Route path='/user' element={<UserPortal />} />
-        <Route path='*' element={<NotFoundPage />} />
+      <Route path='/' exact component={HomePage} />
+      <Route path='/cityinfo' component={CityInfoPage} />
+      <Route path='/user' component={UserPortal} />
+      <Route path='*' component={NotFoundPage} />
     </Switch>
   );
 }

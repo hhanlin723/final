@@ -20,7 +20,7 @@ function CityInfoPage() {
     }
 
     return (
-        <div>
+        <div className="city-info-container">
             {/* Render DestinationCard component with city data */}
             <DestinationCard city={city} />
         </div>

@@ -11,7 +11,7 @@ function HomePage() {
 
   return (
     <div className='home'>
-      HomePage
+      
       <Gallary  />
     
     </div>

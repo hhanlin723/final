@@ -11,6 +11,7 @@ function MyRouter() {
     <Switch>
       <Route path='/' exact component={HomePage} />
       <Route path='/cityinfo' component={CityInfoPage} />
+      <Route path='/city/:id' element={CityInfoPage} /> {/* Route with city ID parameter */}
       <Route path='/user' component={UserPortal} />
       <Route path='*' component={NotFoundPage} />
     </Switch>

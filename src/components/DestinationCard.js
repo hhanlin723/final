@@ -36,7 +36,7 @@ function DestinationCard({ city }) {
                     </button>
                 )}
             </div>
-            { <button onClick={() => setLike(!like)}>Fav</button> }
+            { <button onClick={() => setLike(!like)}>Like</button> }
         </div>
     );
 }

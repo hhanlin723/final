@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { AppContext } from '../store/AppContext.js';
-import DestinationCard from '../components/DestinationCard.js'; // Import DestinationCard component
+import { AppContext } from '../../store/AppContext.js'
+import DestinationCard from '../../components/DestinationCard.js'; // Import DestinationCard component
 
 function CityInfoPage() {
     const { app } = useContext(AppContext);

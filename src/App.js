@@ -10,10 +10,10 @@ function App() {
     const [app, setApp] = useReducer(appReducer, initialState);
 
     useEffect(() => {
-        const url = 'https://662317a63e17a3ac846e947f.mockapi.io';
+        const url = 'https://662317a63e17a3ac846e947f.mockapi.io/Travel';
         const getDestinations = async () => {
             try {
-                const res = await axios.get(`${url}/Travel`);
+                const res = await axios.get(`${url}/city`);
                 setApp({ type: 'loadedCities', payload: res.data });
             } catch (error) {
                 console.error('Error fetching data:', error);
